@@ -52,10 +52,20 @@ namespace Database
                     MessageBox.Show("Preencha os campos.");
                 }
             }
-            catch(Exception ex)
+            catch (Exception ex)
             {
                 MessageBox.Show("Erro ao realizar login" + ex.Message);
             }
+        }
+
+        private void btnCadastro_Click(object sender, EventArgs e)
+        {
+            Cadastro telaCadastro = new Cadastro();
+            telaCadastro.Show();
+            this.Hide();
+
+
+
         }
     }
 }
